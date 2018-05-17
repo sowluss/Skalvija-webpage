@@ -37,8 +37,6 @@ h1.logo-text {
     font-size: 56px;
     width: 90%;
     text-align: center;
-    /* border-top: 1px solid white;  */
-    /* border-bottom: 1px solid white;   */
 }
 
 div.tagline {
@@ -59,7 +57,7 @@ ul.navigation {
     text-transform: uppercase;
     margin: 40px auto;
     justify-content: center;
-    /*new centering option */
+    /*new centering option discovered */
 }
 
 li.navigation-item {
@@ -222,7 +220,6 @@ div.feature-image {
     background-position: center;
     background-size: 100%;
     transition: all 0.2s ease-in-out;
-    /* new */
 }
 
 div.feature-image:hover {
@@ -315,7 +312,6 @@ p.footer-text {
 }
 
 #contact-form {
-    /* transition: all 4s ease-in-out;  */
     margin-top: 20px;
     width: 270px;
     height: 170px;
@@ -428,7 +424,6 @@ div.event-container {
 }
 
 div.event-box {
-    /* margin: auto; */
     max-width: 100%;
     margin: auto;
     padding-top: 10px;
@@ -488,7 +483,6 @@ p.clear {
 
 div.gallery-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
     grid-template-columns: auto auto auto;
     justify-items: center;
     grid-gap: 30px;
@@ -681,7 +675,6 @@ div.gallery-container {
 
     div.gallery-container {
         display: grid;
-        /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
         grid-template-columns: auto;
         justify-items: center;
         grid-gap: auto;
