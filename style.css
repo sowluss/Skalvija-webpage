@@ -3,7 +3,7 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-    background-color: black;
+    background-color: #3D373F;
     box-sizing: border-box;
 }
 
@@ -22,15 +22,15 @@ img#logo {
 
 div.logo-container {
     width: 400px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid #D9C8A2;
+    border-bottom: 2px solid #D9C8A2;
     padding: 10px 0;
     margin: 40px auto 0 auto;
     display: block;
 }
 
 h1.logo-text {
-    color: goldenrod;
+    color: #D9C8A2;
     font-family: 'Eagle Lake', cursive;
     display: block;
     margin: 0 auto;
@@ -40,7 +40,7 @@ h1.logo-text {
 }
 
 div.tagline {
-    color: #C1C1C1;
+    color: #D59276;
     font-family: 'Forum', cursive;
     text-align: center;
     font-size: 18px;
@@ -69,11 +69,11 @@ li.navigation-item {
 }
 
 li.navigation-item:hover {
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid #D59276;
 }
 
 .current-page {
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid #D59276;
 }
 
 /* SLIDER CONTAINER */
@@ -85,7 +85,7 @@ div.slider-container {
     /* didn't know before */
     display: block;
     overflow: hidden;
-    border: 3px solid white;
+    border: 2px solid #FCFCFA;
     margin: 60px auto 0 auto;
 }
 
@@ -206,7 +206,7 @@ div.feature-item {
 }
 
 div h1.feature-title {
-    color: #C1C1C1;
+    color: #D9C8A2;
     font-family: 'Forum', cursive;
     font-size: 27px;
     font-weight: 400;
@@ -252,18 +252,17 @@ p.feature-description {
 }
 
 a.feature-read {
-    background-color: #C1C1C1;
+    background-color: #D9D4CD;
     ;
     color: black;
     padding: 5px 20px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #fff;
 }
 
 a.feature-read:hover {
-    background-color: grey;
+    background-color: #9B9E95;
 }
 
 .fas {
@@ -288,7 +287,7 @@ div.footer-column {
 
 h1.footer-titles {
     text-transform: uppercase;
-    color: goldenrod;
+    color: #D9C8A2;
     font-size: 17px;
     font-weight: 400;
     padding: 30px 0;
@@ -322,7 +321,7 @@ p.footer-text {
     border: none;
     outline: none;
     border-bottom: 1px solid #929595;
-    color: #fff;
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
     font-size: 14px;
@@ -339,15 +338,16 @@ textarea {
 }
 
 form .submit {
-    background-color: #706d6d;
+    background-color: #D9D4CD;
     border: white;
-    color: #EBEBEB;
+    color: black;
     padding: 1px 10px;
 }
 
 form .submit:hover {
-    background-color: goldenrod;
+    background-color: #9B9E95;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 footer {
@@ -390,7 +390,7 @@ footer {
 .menu-item-name {
     font-family: 'Forum', cursive;
     font-weight: bold;
-    border-bottom: 2px dotted goldenrod;
+    border-bottom: 2px dotted #D59276;
 }
 
 .menu-item-description {
