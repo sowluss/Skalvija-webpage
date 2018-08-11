@@ -1,50 +1,36 @@
-var taglineColor = "yellow";
-var title1 = "Eastern European Food";
-var title3 = "the Best food ever";
+const current = document.querySelector('#current'); 
+const images = document.querySelectorAll('.images img');
+const opacity = 0.4;
 
-// document.getElementsByClassName("tagline")[0].innerHTML = title1 + " - " +title3; 
-// document.getElementsByClassName("tagline")[0].style.color = taglineColor;
+// set the first image opacity
+images[0].style.opacity = opacity;
 
-// $("div.tagline").on("mouseover", function() {
-// $(this).css("color", "grey");
-// });
-// $("div.tagline").on("mouseout", function() {
-// $(this).css("color", "goldenrod");
-// });
 
-var slideIndex = 1;
-showSlides(slideIndex);
+images.forEach(img => img.addEventListener('click', imgClick));
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function imgClick(e){
+    // reset the opacity 
+    images.forEach(img => (img.style.opacity = 1));
+
+    // chamge the current image to the target of the clicked image
+    current.src = e.target.src;
+
+    //  add fade-in class
+    current.classList.add('fade-in');
+
+    //  remove fade-in class after 5 secs.
+    setTimeout(() => current.classList.remove('fade-in'), 500);
+
+    // change the opacity to const value (0.4)
+    e.target.style.opacity = opacity;
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+// testing to make a scroll to the current image when bootm images are clicked on
+$('.images img').click(function() {
+    $('html, body').animate({
+        scrollBottom: $('#current').offset().bottom}, 'slow');
+    })
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (
-        i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (
-        i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
-}
 
- 
+
+
