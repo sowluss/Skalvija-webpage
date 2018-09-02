@@ -43,7 +43,7 @@ div.tagline {
     color: #D59276;
     font-family: 'Forum', cursive;
     text-align: center;
-    font-size: 18px;
+    font-size: 27px;
     padding: 10px 0;
     margin-bottom: 30px;
 }
@@ -63,17 +63,21 @@ ul.navigation {
 li.navigation-item {
     color: white;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Forum', cursive;
     padding: 0 20px 5px 20px;
+    transition-duration: .5s;
 }
 
 li.navigation-item:hover {
     border-bottom: 2px solid #D59276;
+    border-radius: 50%;
 }
 
-.current-page {
+li.current-page {
     border-bottom: 2px solid #D59276;
+    border-radius: 50%;
+    color: #d5b276;
 }
 
 /* SLIDER CONTAINER */
@@ -194,14 +198,15 @@ div.feature-container {
     width: 1000px;
     height: 300px;
     display: block;
-    margin: 50px auto 50px auto;
+    margin: 60px auto 60px auto;
     display: flex;
     justify-content: space-between;
-    /* never used before */
+    padding-bottom: 30px;
+    
 }
 
 div.feature-item {
-    width: 220px;
+    width: 270px;
     height: 100px;
 }
 
@@ -219,11 +224,11 @@ div.feature-image {
     margin: 20px 0;
     background-position: center;
     background-size: 100%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 div.feature-image:hover {
-    background-size: 120%;
+    background-size: 130%;
 }
 
 div.lunch {
@@ -245,15 +250,14 @@ div.celebrate {
 p.feature-description {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 100;
+    font-size: 18px;
     margin-bottom: 20px;
     text-align: justify;
 }
 
 a.feature-read {
     background-color: #D9D4CD;
-    ;
     color: black;
     padding: 5px 20px;
     cursor: pointer;
@@ -275,14 +279,16 @@ div.footer-container {
     width: 1000px;
     height: 200px;
     border-top: 1px solid white;
-    display: block;
-    margin: 0 auto 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 60px auto 60px auto;
+    text-align: justify;
 }
 
 div.footer-column {
-    width: 240px;
+    width: 370px;
     height: 200px;
-    float: left;
+   
 }
 
 h1.footer-titles {
@@ -296,7 +302,7 @@ h1.footer-titles {
 
 p.footer-text {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 0;
     font-family: 'Maven Pro', sans-serif;
@@ -380,11 +386,12 @@ footer {
     font-weight: normal;
     margin: 20px 0;
     text-align: Center;
+    color: #c6c0c9;
 }
 
 .menu-item {
     margin: 35px 0;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .menu-item-name {
